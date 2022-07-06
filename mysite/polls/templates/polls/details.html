@@ -1,0 +1,8 @@
+{{q.question_text }}
+
+<ul>
+    {% for choice in q.choice_set.all %}
+        <li>{{ choice.choice_text }}</li>
+    {% endfor %}
+</ul>
+    
